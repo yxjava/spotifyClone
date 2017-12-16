@@ -1,0 +1,151 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: Arial;
+  font-size: 13px;
+  color: #fff;
+  background: #121314; /* Old browsers */
+}
+
+.clearfix { clear: both; }
+
+#container {
+  width: 200px;
+  min-height: 400px;
+  overflow: auto;
+  margin: 50px auto;
+  margin-top: 20px;
+  border-radius: 13px;
+}
+
+#audio-image {
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+#audio-image .cover { width: 100%; }
+
+#audio-info { text-align: center;
+color: grey;}
+#audio-info .title{
+color: #fff;}
+#audio-info .artist:hover {
+color: #fff;
+ }
+
+#audio-info .artist {
+  font-weight: bold;
+}
+
+#buttons {
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+
+button#play {
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url(../images/play.png) no-repeat;
+  float: left;
+  margin-left: -2px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button#pause {
+  margin-left: 20px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  background: url(../images/pause.png) no-repeat;
+  float: left;
+  margin-left: -2px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button#prev {
+  margin-left: 30px;
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+  background: url(../images/prev.png) no-repeat;
+  float: left;
+  margin-top: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button#next {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background: url(../images/next.png) no-repeat;
+  float: left;
+  margin-top: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#tracker {
+  margin-top: -27px;
+  position: relative;
+  width: 200px;
+}
+
+#progress{
+  background-color: green;
+  height: 3px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+
+#duration {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  padding: 10px 8px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#fullduration {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  padding: 10px 8px;
+  border-radius: 5px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+#playlist { list-style: none; }
+
+#playlist li {
+  cursor: pointer;
+  margin: 5px;
+}
+
+#playlist li.active {
+  font-weight: bold;
+  padding: 3px;
+  background: #666;
+}

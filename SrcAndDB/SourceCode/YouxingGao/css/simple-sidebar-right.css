@@ -1,0 +1,126 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+#sidebar-wrapper-right {
+
+    z-index: 1000;
+    position: fixed;
+    right: 0px;
+    width: 0;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #1C1C1F;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav-right {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-top: 0;
+}
+
+.sidebar-nav-right li {
+    text-indent: 20px;
+    line-height: 30px;
+    padding: 5px;
+}
+
+.sidebar-nav-right li a {
+    padding-top: 5px;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav-right li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: none;
+}
+
+.sidebar-navright li a:active,
+.sidebar-navright li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav-right > .sidebar-brand-right {
+    height: 100px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.sidebar-nav-right > .sidebar-brand-right a {
+    color: #999999;
+}
+
+.sidebar-nav-right > .sidebar-brand-right a:hover {
+    color: #fff;
+    background: none;
+}
+
+.img-rounded{
+  margin-top: 20px;
+  width: 85%;
+}
+
+
+#title{
+  color: #DFE0E6;
+  font-size: 15px;
+  padding-left: 8px;
+}
+
+#artist{
+  margin-top: -20px;
+  padding-left: 45px;
+  font-size: 12px;
+  float: left;
+
+}
+
+#artist2{
+  margin-top: -20px;
+  text-indent: 5px !important;
+  font-size: 12px;
+  float: left;
+  clear: right;
+
+}
+#title:hover{
+  text-decoration: underline;
+}
+#artist:hover{
+  text-decoration: underline;
+}
+#artist2:hover{
+  text-decoration: underline;
+}
+#controls{
+  margin-top: -20px;
+  float: left;
+}
+
+@media(min-width:768px) {
+
+    #sidebar-wrapper-right {
+        width: 250px;
+    }
+
+
+}

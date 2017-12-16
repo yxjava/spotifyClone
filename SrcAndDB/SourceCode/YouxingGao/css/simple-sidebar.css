@@ -1,0 +1,212 @@
+/*!
+ * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Toggle Styles */
+
+html{
+  background-color: #121314;
+}
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background-color: #121314;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background-color: #1C1C1F;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 10px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 120px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 30px;
+    padding-bottom: 5px;
+}
+
+.glyphicon{
+  font-size: 30px;
+}
+
+.sidebar-nav li a {
+    padding-top: 5px;
+    font-size: 18px;
+    display: block;
+    text-decoration: none;
+    color: #999999;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: none;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 100px;
+    font-size: 18px;
+    line-height: 60px;
+    margin-bottom: 30px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+.img-circle {
+    margin-left: -7px;
+    width: 80%;
+    border-radius: 50%;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 2px solid black;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#settings{
+  float: left;
+  margin-left: -15px;
+}
+
+#logout{
+  float: left;
+  margin-left: -20px;
+}
+
+#settings .glyphicon{
+  font-size: 22px;
+}
+#logout .glyphicon{
+  font-size: 20px;
+}
+
+.modal-dialog{
+  left: -70px;
+  top: -30px;
+  width: 910px;
+  background-color: #1C1C1F;
+  height: 70px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#page-content-wrapper{
+  margin-left: -20px;
+}
+
+#myModal{
+  color: #999999;
+}
+.modal-content{
+  color: #999999;
+  background-color: #1C1C1F;
+}
+.modal-backdrop {
+   opacity:0.0 !important;
+}
+.modal fade{
+  border:none;
+}
+
+.col-lg-8{
+  margin-top: 100px;
+}
+#myModal2 .modal-backdrop{
+  height: 600px;
+}
+
+@media(min-width:768px) {
+
+    #spotify-logo{
+      padding-top: 15px;
+      margin-left: 3px;
+      width: 60%;
+    }
+
+    #wrapper {
+        padding-left: 250px;
+    }
+
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+
+    #sidebar-wrapper {
+        width: 120px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+
+    #page-content-wrapper {
+        padding: 10px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+
+
+
+}
